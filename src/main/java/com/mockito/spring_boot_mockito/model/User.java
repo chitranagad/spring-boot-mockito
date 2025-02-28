@@ -1,5 +1,6 @@
 package com.mockito.spring_boot_mockito.model;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -9,7 +10,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table
+@Entity
+@Table(name = "USER_TBL")
 public class User {
     @Id
     private Integer id;
